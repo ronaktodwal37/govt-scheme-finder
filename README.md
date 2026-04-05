@@ -37,3 +37,29 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+---
+
+## Notes for this repository
+
+This workspace also contains a small Express server (`server.js`) which serves the `public/` directory and provides minimal API endpoints used by the static UI. If you are running the full project locally, use the `serve` script or `node server.js` to run the Express server:
+
+```bash
+npm install
+npm run serve
+# or
+node server.js
+```
+
+Open http://localhost:3000 to view the app.
+
+To publish this folder to GitHub (locally committed here), either use the GitHub CLI (`gh`) or create a remote repository and push manually:
+
+```bash
+# Create a remote repository and push (example)
+git remote add origin git@github.com:<your-username>/govt-scheme-finder-website.git
+git branch -M main
+git push -u origin main
+```
+
+If you want me to attempt creating & pushing the remote (requires the `gh` CLI and authentication), tell me to proceed and I will try.
