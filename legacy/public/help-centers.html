@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sahaay: Nearby Help Centers</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .map-placeholder {
+            width: 100%;
+            height: 350px;
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            color: var(--text-muted);
+            border: 1px dashed var(--glass-border);
+            margin-bottom: 30px;
+        }
+
+        .center-card {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px;
+        }
+
+        .center-info h3 {
+            margin-bottom: 5px;
+        }
+
+        .distance-badge {
+            background: rgba(59, 130, 246, 0.2);
+            color: var(--primary);
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: 600;
+        }
+    </style>
+</head>
+
+<body>
+                <nav class="navbar">
+        <div class="logo">
+            <i class="fa-solid fa-landmark"></i> GovAssist
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="forum.html">Community</a></li>
+            <li><a href="help-centers.html" class="active">CSC Centers</a></li>
+            <li><a href="dashboard.html" class="btn">Dashboard</a></li>
+        </ul>
+    </nav>
+
+    <div class="section fade-in">
+        <div class="container dual-col">
+            <div>
+                <h1 class="gradient-text">Nearby Help Centers (CSC)</h1>
+                <p>Find your nearest Common Service Center to get offline assistance with scheme enrollment and document
+                    verification.</p>
+                <div class="input-group" style="margin-top:20px; margin-bottom: 20px;">
+                    <form id="map-search-form" onsubmit="event.preventDefault();">
+                        <input type="text" id="map-search-input"
+                            placeholder="Enter PIN code or location (e.g. 'CSC center Pune')..." required>
+                        <button type="submit" class="btn-primary w-100" style="margin-top:10px;">Search Map</button>
+                    </form>
+                </div>
+
+                <div class="cards-grid">
+                    <div class="glass-card center-card">
+                        <div class="center-info">
+                            <h3>Rajeev Gandhi Seva Kendra</h3>
+                            <p class="small text-muted"><i class="fa-solid fa-map-pin"></i> Block A, Market Street,
+                                800001</p>
+                        </div>
+                        <div class="distance-badge">0.8 km <i class="fa-solid fa-location-arrow"></i></div>
+                    </div>
+                    <div class="glass-card center-card">
+                        <div class="center-info">
+                            <h3>Bhavani CSC Digital Center</h3>
+                            <p class="small text-muted"><i class="fa-solid fa-map-pin"></i> Near Post Office, Main Road,
+                                800002</p>
+                        </div>
+                        <div class="distance-badge">2.4 km <i class="fa-solid fa-location-arrow"></i></div>
+                    </div>
+                    <div class="glass-card center-card">
+                        <div class="center-info">
+                            <h3>Panchayat e-Mitra Hub</h3>
+                            <p class="small text-muted"><i class="fa-solid fa-map-pin"></i> Block C, State Highway 90,
+                                800004</p>
+                        </div>
+                        <div class="distance-badge">4.1 km <i class="fa-solid fa-location-arrow"></i></div>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="map-placeholder" style="border:none; padding: 0; overflow:hidden;">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14399.722421319088!2d85.1278142!3d25.6238515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ed584a2fa3aa95%3A0xc6ad10902a7b8eaf!2sCommon%20Service%20Center!5e0!3m2!1sen!2sin!4v1680101234567!5m2!1sen!2sin"
+                        width="100%" height="100%"
+                        style="border:0; border-radius: 12px; filter: invert(90%) hue-rotate(180deg);"
+                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="glass-card">
+                    <h3>Document Checklist before visiting:</h3>
+                    <ul style="margin-top:10px; margin-left: 20px; color: var(--text-muted); font-size: 14px;">
+                        <li>Original Aadhaar Card</li>
+                        <li>Bank Passbook / Cancelled Cheque</li>
+                        <li>Recent Income Certificate</li>
+                        <li>Passport Sized Photographs</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h3><i class="fa-solid fa-landmark" style="color:var(--primary); margin-right:8px;"></i> GovAssist</h3>
+                <p>Empowering citizens by simplifying access to government schemes, subsidies, and essential public services through intelligent technology.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#all-schemes">Browse Search</a></li>
+                    <li><a href="forum.html">Community Forum</a></li>
+                    <li><a href="help-centers.html">CSC Locator</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Support</h3>
+                <ul class="footer-links">
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="help-centers.html">Help Centers</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Newsletter</h3>
+                <p style="margin-bottom:15px;">Subscribe to get the latest scheme updates and application deadlines.</p>
+                <div class="input-group" style="display:flex; gap:10px;">
+                    <input type="email" placeholder="Your email address..." style="padding:10px; border-radius:8px; width:100%;">
+                    <button class="btn-primary" style="padding:10px 15px;"><i class="fa-solid fa-paper-plane"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2026 GovAssist Platform. All rights reserved. Not an official government website.
+        </div>
+    </footer>
+    <script src="app.js"></script>
+</body>
+
+</html>

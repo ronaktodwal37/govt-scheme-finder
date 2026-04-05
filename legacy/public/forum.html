@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sahaay: Community Forum</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .forum-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+
+        .post-card {
+            display: flex;
+            gap: 20px;
+            align-items: flex-start;
+            margin-bottom: 20px;
+        }
+
+        .post-votes {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 10px;
+            border-radius: 8px;
+        }
+
+        .post-content {
+            flex-grow: 1;
+        }
+
+        .post-meta {
+            font-size: 13px;
+            color: var(--text-muted);
+            margin-top: 10px;
+        }
+
+        .tag {
+            background: rgba(236, 72, 153, 0.2);
+            color: var(--secondary);
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-size: 12px;
+        }
+    </style>
+</head>
+
+<body>
+                <nav class="navbar">
+        <div class="logo">
+            <i class="fa-solid fa-landmark"></i> GovAssist
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="forum.html" class="active">Community</a></li>
+            <li><a href="help-centers.html">CSC Centers</a></li>
+            <li><a href="dashboard.html" class="btn">Dashboard</a></li>
+        </ul>
+    </nav>
+
+    <div class="section fade-in">
+        <div class="container">
+            <div class="forum-header">
+                <div>
+                    <h1 class="gradient-text">Community Forum</h1>
+                    <p>Ask questions and share your success stories.</p>
+                </div>
+                <button class="btn-primary" onclick="document.getElementById('new-post-form').style.display='block'"><i
+                        class="fa-solid fa-plus"></i> New Discussion</button>
+            </div>
+
+            <!-- New Post Form hidden by default -->
+            <div id="new-post-form" class="glass-card" style="display:none; margin-bottom:20px;">
+                <form id="forum-form">
+                    <div class="input-group">
+                        <label>Topic Title</label>
+                        <input type="text" id="forum-title" required placeholder="Question or topic">
+                    </div>
+                    <div class="input-group">
+                        <label>Description</label>
+                        <textarea id="forum-desc" required
+                            style="width: 100%; background: rgba(15, 23, 42, 0.5); border: 1px solid var(--glass-border); color: white; padding: 12px; border-radius: 8px;"
+                            rows="3" placeholder="Describe your question..."></textarea>
+                    </div>
+                    <div style="display:flex; gap:10px; margin-top:10px;">
+                        <button type="submit" class="btn-primary">Post</button>
+                        <button type="button" class="btn-secondary"
+                            onclick="document.getElementById('new-post-form').style.display='none'">Cancel</button>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Posts List -->
+            <div id="forum-posts-container">
+                <div class="glass-card post-card">
+                    <div class="post-votes">
+                        <i class="fa-solid fa-chevron-up" style="color:var(--primary);cursor:pointer;"></i>
+                        <strong style="margin:5px 0;">124</strong>
+                        <i class="fa-solid fa-chevron-down" style="color:var(--text-muted);cursor:pointer;"></i>
+                    </div>
+                    <div class="post-content">
+                        <h3>How do I check my PM Kisan status offline?</h3>
+                        <p style="color:var(--text-muted); margin-top:5px;">I have applied last month but I don't have
+                            good
+                            internet access. Where can I go to verify my name in the beneficiary list?</p>
+                        <div class="post-meta">
+                            <span class="tag">Agriculture</span> &bull; Posted by User992 &bull; 14 Comments
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass-card post-card">
+                    <div class="post-votes">
+                        <i class="fa-solid fa-chevron-up" style="color:var(--primary);cursor:pointer;"></i>
+                        <strong style="margin:5px 0;">89</strong>
+                        <i class="fa-solid fa-chevron-down" style="color:var(--text-muted);cursor:pointer;"></i>
+                    </div>
+                    <div class="post-content">
+                        <h3>Documents required for Sukanya Samriddhi?</h3>
+                        <p style="color:var(--text-muted); margin-top:5px;">Can someone provide an updated checklist of
+                            what
+                            the bank requires to open the SSY account?</p>
+                        <div class="post-meta">
+                            <span class="tag">Education</span> &bull; Posted by Rani_Devi &bull; 6 Comments
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass-card post-card">
+                    <div class="post-votes">
+                        <i class="fa-solid fa-chevron-up" style="color:var(--primary);cursor:pointer;"></i>
+                        <strong style="margin:5px 0;">210</strong>
+                        <i class="fa-solid fa-chevron-down" style="color:var(--text-muted);cursor:pointer;"></i>
+                    </div>
+                    <div class="post-content">
+                        <h3><i class="fa-solid fa-check-circle" style="color:var(--success)"></i> Solved: PM-JAY
+                            Registration Issue</h3>
+                        <p style="color:var(--text-muted); margin-top:5px;">If you are facing issues with Aadhaar
+                            mismatch,
+                            you need to visit a CSC center. Here's a step-by-step guide on what I did to get it fixed.
+                        </p>
+                        <div class="post-meta">
+                            <span class="tag"
+                                style="background:rgba(16,185,129,0.2); color:var(--success);">Health</span>
+                            &bull; Posted by InfoGuru &bull; 42 Comments
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h3><i class="fa-solid fa-landmark" style="color:var(--primary); margin-right:8px;"></i> GovAssist</h3>
+                <p>Empowering citizens by simplifying access to government schemes, subsidies, and essential public services through intelligent technology.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#all-schemes">Browse Search</a></li>
+                    <li><a href="forum.html">Community Forum</a></li>
+                    <li><a href="help-centers.html">CSC Locator</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Support</h3>
+                <ul class="footer-links">
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="help-centers.html">Help Centers</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Newsletter</h3>
+                <p style="margin-bottom:15px;">Subscribe to get the latest scheme updates and application deadlines.</p>
+                <div class="input-group" style="display:flex; gap:10px;">
+                    <input type="email" placeholder="Your email address..." style="padding:10px; border-radius:8px; width:100%;">
+                    <button class="btn-primary" style="padding:10px 15px;"><i class="fa-solid fa-paper-plane"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2026 GovAssist Platform. All rights reserved. Not an official government website.
+        </div>
+    </footer>
+    <script src="app.js"></script>
+</body>
+
+</html>

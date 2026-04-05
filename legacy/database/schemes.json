@@ -1,0 +1,110 @@
+[
+  {
+    "id": "1",
+    "name": "PM Kisan Samman Nidhi Yojana",
+    "state": "All",
+    "income_limit": 500000,
+    "category": ["Farmer"],
+    "benefits": "₹6,000 per year directly to bank account",
+    "documents": ["Aadhaar Card", "Bank Account", "Land Ownership Papers"]
+  },
+  {
+    "id": "2",
+    "name": "Pradhan Mantri Awas Yojana (PMAY)",
+    "state": "All",
+    "income_limit": 600000,
+    "category": ["EWS", "LIG"],
+    "benefits": "Subsidy on home loan interest / Financial assistance for house construction",
+    "documents": ["Aadhaar Card", "Income Certificate", "Bank Passbook"]
+  },
+  {
+    "id": "3",
+    "name": "Mukhya Mantri Kanya Utthan Yojana",
+    "state": "Bihar",
+    "income_limit": 200000,
+    "category": ["Student", "Girl Child"],
+    "benefits": "Financial assistance from birth to graduation (up to ₹54,100)",
+    "documents": ["Birth Certificate", "Aadhaar Card", "Bank Account"]
+  },
+  {
+    "id": "4",
+    "name": "Ayushman Bharat PM-JAY",
+    "state": "All",
+    "income_limit": 300000,
+    "category": ["BPL", "General"],
+    "benefits": "Health insurance cover of up to ₹5 Lakhs per family per year",
+    "documents": ["Aadhaar Card", "Ration Card", "PM-JAY ID"]
+  },
+  {
+    "id": "5",
+    "name": "Kalya Yojana",
+    "state": "Odisha",
+    "income_limit": 400000,
+    "category": ["Farmer", "Landless Laborer"],
+    "benefits": "Financial aid of ₹10,000 per year for agriculture / ₹12,500 for landless",
+    "documents": ["Aadhaar Card", "Residential Proof", "Bank Account"]
+  },
+  {
+    "id": "6",
+    "name": "Sukanya Samriddhi Yojana",
+    "state": "All",
+    "income_limit": null,
+    "category": ["Girl Child"],
+    "benefits": "High interest rate savings scheme for girl child with tax benefits",
+    "documents": ["Birth Certificate", "Identity Proof of Parents", "Address Proof"]
+  },
+  {
+    "id": "7",
+    "name": "Rythu Bandhu Scheme",
+    "state": "Telangana",
+    "income_limit": 800000,
+    "category": ["Farmer"],
+    "benefits": "₹5,000 per acre per season to support farm investment",
+    "documents": ["Aadhaar Card", "Pattadar Passbook", "Bank Account"]
+  },
+  {
+    "id": "8",
+    "name": "Atal Pension Yojana",
+    "state": "All",
+    "income_limit": null,
+    "category": ["Unorganized Sector"],
+    "benefits": "Guaranteed minimum monthly pension of ₹1,000 to ₹5,000 after 60 years",
+    "documents": ["Aadhaar Card", "Savings Bank Account"]
+  },
+  {
+    "id": "9",
+    "name": "Stand-Up India Scheme",
+    "state": "All",
+    "income_limit": null,
+    "category": ["SC", "ST", "Women Entrepreneurs"],
+    "benefits": "Bank loans between ₹10 Lakh and ₹1 Crore for greenfield enterprises",
+    "documents": ["Aadhaar Card", "Category Certificate", "Project Report"]
+  },
+  {
+    "id": "10",
+    "name": "Mahatma Gandhi National Rural Employment Guarantee Act (MGNREGA)",
+    "state": "All",
+    "income_limit": null,
+    "category": ["Rural", "Unemployed"],
+    "benefits": "100 days of guaranteed wage employment in a financial year",
+    "documents": ["Aadhaar Card", "Job Card", "Bank Account"]
+  },
+  {
+    "id": "11",
+    "name": "YSR Cheyutha Scheme",
+    "state": "Andhra Pradesh",
+    "income_limit": 150000,
+    "category": ["SC", "ST", "BC", "Minorities", "Women (45-60 yrs)"],
+    "benefits": "₹75,000 financial assistance over four years",
+    "documents": ["Aadhaar Card", "Caste Certificate", "Income Certificate"]
+  },
+  {
+    "id": "12",
+    "name": "Bhavantar Bhugtan Yojana",
+    "state": "Madhya Pradesh",
+    "income_limit": null,
+    "category": ["Farmer"],
+    "benefits": "Compensates farmers if crop prices fall below minimum support price (MSP)",
+    "documents": ["Aadhaar Card", "Khasra/Khatauni Copy", "Bank Details"]
+  }
+]

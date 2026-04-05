@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sahaay: Govt Scheme Finder</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts for Modern Typography -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Sticky Navbar -->
+                <nav class="navbar">
+        <div class="logo">
+            <i class="fa-solid fa-landmark"></i> GovAssist
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="index.html#find-schemes">Find Schemes</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="forum.html">Community</a></li>
+            <li><a href="help-centers.html">CSC Centers</a></li>
+            <li><a href="dashboard.html" class="btn">Dashboard</a></li>
+        </ul>
+    </nav>
+
+    <!-- Page Transitions & Hero Container -->
+    <div id="app" class="page-transition">
+
+        <!-- Hero Section -->
+        <header id="home" class="hero section">
+            <div class="hero-content blur-glass">
+                <h1>Discover the Right <br><span class="gradient-text">Government Schemes</span> For You</h1>
+                <p>Intelligent, fast, and secure scheme matching powered by graph technology.</p>
+                <div class="cta-buttons">
+                    <button class="btn-primary" onclick="document.getElementById('finder').scrollIntoView();">Find My
+                        Match</button>
+                    <button class="btn-secondary"
+                        onclick="document.getElementById('all-schemes').scrollIntoView();">Explore All</button>
+                </div>
+            </div>
+
+            <!-- Floating Decorative Elements -->
+            <div class="blob blob-1"></div>
+            <div class="blob blob-2"></div>
+        </header>
+
+        <!-- Profile / Finder Section -->
+        <section id="finder" class="finder-section section fade-in">
+            <div class="container dual-col">
+                <div class="form-container glass-card">
+                    <h2><i class="fa-solid fa-id-card"></i> Your Profile</h2>
+                    <p class="subtitle">Tell us about yourself to find matches.</p>
+                    <form id="profile-form">
+                        <div class="input-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" required placeholder="Enter your full name">
+                        </div>
+                        <div class="input-group">
+                            <label for="state">State</label>
+                            <select id="state" required>
+                                <option value="">Select State</option>
+                                <option value="Bihar">Bihar</option>
+                                <option value="Telangana">Telangana</option>
+                                <option value="Odisha">Odisha</option>
+                                <option value="Madhya Pradesh">Madhya Pradesh</option>
+                                <option value="Andhra Pradesh">Andhra Pradesh</option>
+                                <option value="All">Other/All India</option>
+                            </select>
+                        </div>
+                        <div class="input-group">
+                            <label for="income">Annual Income (₹)</label>
+                            <input type="number" id="income" required placeholder="e.g. 150000">
+                        </div>
+                        <div class="category-group">
+                            <label>Categories (Select at least 1)</label>
+                            <div class="chips" id="category-chips">
+                                <label class="chip"><input type="checkbox" value="Farmer"> Farmer</label>
+                                <label class="chip"><input type="checkbox" value="Student"> Student</label>
+                                <label class="chip"><input type="checkbox" value="Women Entrepreneurs"> Women
+                                    Entrepreneurs</label>
+                                <label class="chip"><input type="checkbox" value="BPL"> BPL</label>
+                                <label class="chip"><input type="checkbox" value="Girl Child"> Girl Child</label>
+                                <label class="chip"><input type="checkbox" value="Rural"> Rural / Unemployed</label>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn-primary w-100">Find Schemes <i
+                                class="fa-solid fa-wand-magic-sparkles"></i></button>
+                    </form>
+                </div>
+
+                <!-- Results & Recommendations Column -->
+                <div class="results-container">
+                    <div class="tabs">
+                        <button class="tab active" data-target="matched-content">Eligible Matches</button>
+                        <button class="tab" data-target="recommended-content">
+                            <i class="fa-solid fa-share-nodes"></i> Smart Recommendations
+                        </button>
+                    </div>
+
+                    <div id="matched-content" class="tab-content active">
+                        <div id="matched-grid" class="cards-grid">
+                            <!-- Skeleton/Cards will be injected here -->
+                            <div class="empty-state">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                                <p>Submit your profile to see matches</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="recommended-content" class="tab-content">
+                        <div class="recommendation-banner glass-card">
+                            <p><i class="fa-solid fa-robot"></i> <strong>TigerGraph Graph Engine</strong></p>
+                            <p class="small">"Users similar to you also applied for these schemes:"</p>
+                        </div>
+                        <div id="recommended-grid" class="cards-grid">
+                            <div class="empty-state">
+                                <i class="fa-solid fa-diagram-project"></i>
+                                <p>Submit profile to generate graph recommendations.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- All Schemes Section -->
+        <section id="all-schemes" class="all-schemes-section section fade-in">
+            <h2 class="title-center">Browse All Schemes</h2>
+            <div class="container" style="max-width: 600px; margin-bottom: 30px;">
+                <div class="input-group">
+                    <input type="text" id="scheme-search-input"
+                        placeholder="Search schemes by name, category, or state..."
+                        style="padding: 15px; border-radius: 30px; text-align: center;">
+                </div>
+            </div>
+            <div id="all-schemes-grid" class="cards-grid-large container">
+                <!-- Data populated here -->
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Footer -->
+        <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h3><i class="fa-solid fa-landmark" style="color:var(--primary); margin-right:8px;"></i> GovAssist</h3>
+                <p>Empowering citizens by simplifying access to government schemes, subsidies, and essential public services through intelligent technology.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#all-schemes">Browse Search</a></li>
+                    <li><a href="forum.html">Community Forum</a></li>
+                    <li><a href="help-centers.html">CSC Locator</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Support</h3>
+                <ul class="footer-links">
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="help-centers.html">Help Centers</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Newsletter</h3>
+                <p style="margin-bottom:15px;">Subscribe to get the latest scheme updates and application deadlines.</p>
+                <div class="input-group" style="display:flex; gap:10px;">
+                    <input type="email" placeholder="Your email address..." style="padding:10px; border-radius:8px; width:100%;">
+                    <button class="btn-primary" style="padding:10px 15px;"><i class="fa-solid fa-paper-plane"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2026 GovAssist Platform. All rights reserved. Not an official government website.
+        </div>
+    </footer>
+    <script src="app.js"></script>
+</body>
+
+</html>

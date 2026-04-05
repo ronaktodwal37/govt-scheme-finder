@@ -1,5 +1,3 @@
-@import "tailwindcss";
-
 /* Base and Variables */
 :root {
     --bg-dark: #0f172a;
@@ -31,7 +29,11 @@ body {
     scroll-behavior: smooth;
 }
 
-h1, h2, h3, h4, .logo {
+h1,
+h2,
+h3,
+h4,
+.logo {
     font-family: var(--font-heading);
 }
 
@@ -93,9 +95,11 @@ h1, h2, h3, h4, .logo {
 
 /* Nav links container */
 .nav-links {
-    list-style: none;           /* ❌ remove bullets */
+    list-style: none;
+    /* ❌ remove bullets */
     display: flex;
-    align-items: center;        /* ✅ vertical alignment */
+    align-items: center;
+    /* ✅ vertical alignment */
     gap: 35px;
     margin: 0;
     padding: 0;
@@ -279,7 +283,8 @@ form {
     margin-top: 20px;
 }
 
-.input-group label, .category-group label {
+.input-group label,
+.category-group label {
     display: block;
     margin-bottom: 8px;
     font-weight: 500;
@@ -287,7 +292,8 @@ form {
     color: var(--text-muted);
 }
 
-.input-group input, .input-group select {
+.input-group input,
+.input-group select {
     width: 100%;
     background: rgba(15, 23, 42, 0.5);
     border: 1px solid var(--glass-border);
@@ -297,7 +303,8 @@ form {
     font-family: var(--font-body);
 }
 
-.input-group input:focus, .input-group select:focus {
+.input-group input:focus,
+.input-group select:focus {
     outline: none;
     border-color: var(--primary);
 }
@@ -363,8 +370,15 @@ form {
 }
 
 @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(10px); }
-    to { opacity: 1; transform: translateY(0); }
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .cards-grid {
@@ -384,6 +398,7 @@ form {
     padding: 50px 0;
     color: var(--text-muted);
 }
+
 .empty-state i {
     font-size: 40px;
     margin-bottom: 15px;
@@ -396,8 +411,15 @@ form {
     border-left: 4px solid var(--secondary);
 }
 
-.recommendation-banner p { margin: 0; }
-.recommendation-banner .small { font-size: 13px; color: var(--text-muted); margin-top: 5px;}
+.recommendation-banner p {
+    margin: 0;
+}
+
+.recommendation-banner .small {
+    font-size: 13px;
+    color: var(--text-muted);
+    margin-top: 5px;
+}
 
 /* Scheme Cards */
 .scheme-card {
@@ -468,6 +490,7 @@ form {
     animation: pulse 1.5s infinite ease-in-out;
     border-radius: 4px;
 }
+
 .skeleton-card {
     height: 180px;
     background: rgba(255, 255, 255, 0.05);
@@ -475,9 +498,17 @@ form {
 }
 
 @keyframes pulse {
-    0% { background: rgba(255,255,255, 0.05); }
-    50% { background: rgba(255,255,255, 0.1); }
-    100% { background: rgba(255,255,255, 0.05); }
+    0% {
+        background: rgba(255, 255, 255, 0.05);
+    }
+
+    50% {
+        background: rgba(255, 255, 255, 0.1);
+    }
+
+    100% {
+        background: rgba(255, 255, 255, 0.05);
+    }
 }
 
 
@@ -487,32 +518,38 @@ form {
     border-top: 1px solid var(--glass-border);
     padding: 60px 0 20px;
 }
+
 .footer-content {
     display: flex;
     justify-content: space-between;
     margin-bottom: 40px;
 }
+
 .footer-brand p {
     max-width: 300px;
     color: var(--text-muted);
     margin-top: 10px;
 }
+
 .footer-links {
     display: flex;
     gap: 20px;
 }
+
 .footer-links a {
     color: var(--text-muted);
     text-decoration: none;
 }
+
 .footer-links a:hover {
     color: white;
 }
+
 .footer-bottom {
     text-align: center;
     color: var(--text-muted);
     font-size: 14px;
-    border-top: 1px solid rgba(255,255,255,0.05);
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
     padding-top: 20px;
 }
 
@@ -539,7 +576,7 @@ form {
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
 
 .chat-toggle:hover {
@@ -579,12 +616,19 @@ form {
     align-items: center;
     border-bottom: 1px solid var(--glass-border);
 }
-.chat-header h3 { font-size: 16px; }
+
+.chat-header h3 {
+    font-size: 16px;
+}
+
 .chat-header button {
     background: transparent;
     color: var(--text-muted);
 }
-.chat-header button:hover { color: white; }
+
+.chat-header button:hover {
+    color: white;
+}
 
 .chat-body {
     flex-grow: 1;
@@ -623,14 +667,17 @@ form {
 
 .chat-input-area input {
     flex-grow: 1;
-    background: rgba(0,0,0,0.2);
+    background: rgba(0, 0, 0, 0.2);
     border: 1px solid var(--glass-border);
     border-radius: 20px;
     padding: 8px 15px;
     color: white;
 }
 
-.chat-input-area input:focus { outline: none; border-color: var(--primary); }
+.chat-input-area input:focus {
+    outline: none;
+    border-color: var(--primary);
+}
 
 .chat-input-area button {
     width: 40px;
@@ -656,7 +703,7 @@ form {
     color: white;
     padding: 12px 20px;
     border-radius: 8px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     animation: slideIn 0.3s ease forwards;
     display: flex;
     align-items: center;
@@ -664,8 +711,15 @@ form {
 }
 
 @keyframes slideIn {
-    from { transform: translateX(-100%); opacity: 0; }
-    to { transform: translateX(0); opacity: 1; }
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
 
 .fade-out {
@@ -673,5 +727,8 @@ form {
 }
 
 @keyframes fadeOut {
-    to { transform: translateY(10px); opacity: 0; }
+    to {
+        transform: translateY(10px);
+        opacity: 0;
+    }
 }

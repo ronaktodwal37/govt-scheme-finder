@@ -1,0 +1,57 @@
+[
+    {
+        "id": "u1",
+        "name": "Ramesh Kumar",
+        "state": "Bihar",
+        "income": 150000,
+        "category": [
+            "Farmer"
+        ],
+        "applied_schemes": [
+            "1",
+            "3"
+        ]
+    },
+    {
+        "id": "u2",
+        "name": "Sunita Devi",
+        "state": "All",
+        "income": 250000,
+        "category": [
+            "General",
+            "Women Entrepreneurs"
+        ],
+        "applied_schemes": [
+            "4",
+            "9"
+        ]
+    },
+    {
+        "id": "u3",
+        "name": "Arjun Singh",
+        "state": "Telangana",
+        "income": 120000,
+        "category": [
+            "Farmer",
+            "BPL"
+        ],
+        "applied_schemes": [
+            "1",
+            "4",
+            "7"
+        ]
+    },
+    {
+        "id": "u4",
+        "name": "Priya Sharma",
+        "state": "Madhya Pradesh",
+        "income": 500000,
+        "category": [
+            "General",
+            "Girl Child"
+        ],
+        "applied_schemes": [
+            "6"
+        ]
+    }
+]

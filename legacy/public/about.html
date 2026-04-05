@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sahaay: About Us</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .about-section {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 40px;
+        }
+
+        .team-card {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .team-card i {
+            font-size: 50px;
+            color: var(--primary);
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+
+<body>
+                <nav class="navbar">
+        <div class="logo">
+            <i class="fa-solid fa-landmark"></i> GovAssist
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html" class="active">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="dashboard.html" class="btn">Dashboard</a></li>
+        </ul>
+    </nav>
+
+    <div class="section fade-in">
+        <div class="container about-section">
+            <h1 class="gradient-text">Bridging the Gap Between Policy and People</h1>
+            <p>GovAssist AI leverages cutting-edge intelligence to ensure that every citizen in India can navigate the
+                complex ecosystem of social schemes with dignity and ease.</p>
+
+            <div class="glass-card" style="margin-top: 40px; text-align: left;">
+                <h2>Our Mission</h2>
+                <p>To democratize access to government intelligence. We build localized, AI-driven solutions that remove
+                    the linguistic and bureaucratic barriers preventing 1.4 billion people from accessing their rightful
+                    benefits.</p>
+
+                <h2 style="margin-top:20px;">Our Vision</h2>
+                <p>An India where social safety nets are invisible yet omnipresent. We envision a future where every
+                    citizen receives proactive, personalized guidance on schemes that can transform their lives, at the
+                    push of a button.</p>
+
+                <h2 style="margin-top:20px;">The Values that Guide Us</h2>
+                <ul style="margin-left: 20px; color: var(--text-muted);">
+                    <li><strong>Transparency:</strong> Every AI decision is explainable.</li>
+                    <li><strong>Accessibility:</strong> Built for Bharat. Supporting regional dialects.</li>
+                    <li><strong>Innovation:</strong> Continuous R&D in Large Language Models.</li>
+                </ul>
+            </div>
+
+            <h2 style="margin-top:60px;">The Minds Behind the Mission</h2>
+            <div class="team-grid">
+                <div class="glass-card team-card">
+                    <img src="ananya.png" alt="Dr. Ananya Sharma"
+                        style="width: 100px; height: 100px; border-radius: 50%; object-fit: cover; margin-bottom: 15px; border: 2px solid var(--primary);">
+                    <h3>Dr. Ananya Sharma</h3>
+                    <p class="small text-muted">CEO & Founder</p>
+                </div>
+                <div class="glass-card team-card">
+                    <img src="vikram.png" alt="Vikram Mehta"
+                        style="width: 100px; height: 100px; border-radius: 50%; object-fit: cover; margin-bottom: 15px; border: 2px solid var(--primary);">
+                    <h3>Vikram Mehta</h3>
+                    <p class="small text-muted">CTO</p>
+                </div>
+                <div class="glass-card team-card">
+                    <img src="priya.png" alt="Priya Iyer"
+                        style="width: 100px; height: 100px; border-radius: 50%; object-fit: cover; margin-bottom: 15px; border: 2px solid var(--primary);">
+                    <h3>Priya Iyer</h3>
+                    <p class="small text-muted">Dir. Public Policy</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+        <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h3><i class="fa-solid fa-landmark" style="color:var(--primary); margin-right:8px;"></i> GovAssist</h3>
+                <p>Empowering citizens by simplifying access to government schemes, subsidies, and essential public services through intelligent technology.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#all-schemes">Browse Search</a></li>
+                    <li><a href="forum.html">Community Forum</a></li>
+                    <li><a href="help-centers.html">CSC Locator</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Support</h3>
+                <ul class="footer-links">
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="help-centers.html">Help Centers</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Newsletter</h3>
+                <p style="margin-bottom:15px;">Subscribe to get the latest scheme updates and application deadlines.</p>
+                <div class="input-group" style="display:flex; gap:10px;">
+                    <input type="email" placeholder="Your email address..." style="padding:10px; border-radius:8px; width:100%;">
+                    <button class="btn-primary" style="padding:10px 15px;"><i class="fa-solid fa-paper-plane"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2026 GovAssist Platform. All rights reserved. Not an official government website.
+        </div>
+    </footer>
+    <script src="app.js"></script>
+</body>
+
+</html>
