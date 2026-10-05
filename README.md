@@ -1,4 +1,4 @@
-# govt-scheme-finder
+# govt-scheme-
 it is made for checking the available schemes 
 
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
